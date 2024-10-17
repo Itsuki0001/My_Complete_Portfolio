@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+/*all section uses*/
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
+/*Main variables*/
 :root {
     --bg-color: black;
     --second-bg-color: #161616;
@@ -19,7 +19,7 @@
     --mind-color: #3ad3ff;
     --head-color: #fd7200;
 }
-
+/*essential section works*/
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -42,7 +42,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
-
+/*header section use*/
 .header {
     position: fixed;
     top: 0;
@@ -56,7 +56,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
 }
-
+/*Main logo*/
 .logo {
     font-size: 3rem;
     color: var(--main-color);
@@ -68,7 +68,7 @@ html::-webkit-scrollbar-thumb {
 .logo:hover {
     transform: scale(1.1);
 }
-
+/*Navbar Section*/
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -83,13 +83,13 @@ html::-webkit-scrollbar-thumb {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-
+/*navbar icons*/
 #menu_icon {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
 }
-
+/*Navbar responsive part*/
 @media (max-width: 995px) {
     #menu_icon {
         display: block;
@@ -126,7 +126,7 @@ html::-webkit-scrollbar-thumb {
         border-bottom: 0.5rem solid var(--main-color);
     }
 }
-
+/*home section*/
 section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -139,7 +139,7 @@ section {
     gap: 8rem;
     background: var(--bg-color);
 }
-
+/*home texts*/
 .home.home_content h1 {
     font-size: 6rem;
     font-weight: 700;
@@ -155,7 +155,7 @@ span {
     margin-bottom: 1rem;
     font-weight: 700;
 }
-
+/*Home images*/
 .home_img {
     border-radius: 50%;
 }
@@ -172,12 +172,12 @@ span {
     transform: scale(1.01);
     filter: drop-shadow(0 0 25px var(--main-color));
 }
-
+/*home texts*/
 .home_content p {
     font-size: 1.8rem;
     font-weight: 500;
 }
-
+/*Social icons*/
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -682,7 +682,8 @@ span {
 .footer .social a:hover {
     background-color: black;
     transform: scale(1.2) translateY(-5px);
-    color: var(--main-color);
+    box-shadow: 0 0 25px var(--second-bg-color);
+    color: var(--mind-color);
 }
 
 .footer ul {
